@@ -1,26 +1,3 @@
-# Agentic AI — Day 1
-## Local setup and hands-on programs
-
-**SoDak EduTech** · Agent Foundations & Building an Agent from Scratch
-
-Everything runs on your own machine. No Colab, no cloud notebook.
-
-**This course costs nothing to run.** The default provider is Google's Gemini
-free tier — no credit card, no billing account, no trial that expires. The only
-third-party package is `openai`, and that package is not tied to OpenAI: point
-it at a different base URL and it talks to any provider with an OpenAI-compatible
-endpoint. Everything else is the Python standard library.
-
----
-
-# Part A — Setting up your environment
-
-Do this **once**, before Day 1. Budget 30 minutes. If you get stuck, jump to
-[Troubleshooting](#troubleshooting) at the end — the five most common failures
-are listed there with fixes.
-
----
-
 ## Step 1 — Check your Python version
 
 You need **Python 3.10 or newer**. Open a terminal and run:
@@ -458,37 +435,3 @@ Read the modules in this order — each is heavily commented and roughly 150 lin
 **On the default provider this course costs nothing.** No card, no credits, no
 expiry. The trace still prints a cost line so you learn to read it — it will say
 `cost: free tier` until you switch to a paid provider.
-
-What you manage instead is **rate limits**. Four habits:
-
-1. **Keep `MODEL_CHEAP` on the lighter model.** Evaluators, planners and routers
-   do easy work, and the lighter model usually has a higher request limit.
-2. **Never remove `max_iterations`.** A failing tool with no cap will burn your
-   daily request quota in about ninety seconds.
-3. **Stagger the class.** If thirty students launch Lab 6 simultaneously, some
-   will hit limits. Start in two halves a minute apart.
-4. **Read the token counts anyway.** They are the habit that matters when a real
-   project moves to a paid provider — where the same run costs real money.
-
-If you later move to a paid provider, set `PRICE_PER_1K_INPUT` and
-`PRICE_PER_1K_OUTPUT` in `.env` and the trace will compute rupee costs for you.
-
----
-
-# End of Day 1 — what to submit
-
-- Your completed `exercises/` folder, pushed to your own GitHub repository
-- One trace from a successful multi-tool run (Lab 3)
-- One trace showing self-healing recovery (Lab 4)
-- Your largest run by token count, and one thing you would change to reduce it
-
-**Tomorrow:** the OpenAI Agents SDK. Every feature in it is something in
-`agentcore/` that you built by hand today. Keep this folder — you will map them
-one to one.
-
----
-
-*SoDak EduTech · Agentic AI Track · sodakedutech.in*
-#   A g e n t i c _ A I _ W o r k s h o p  
- #   A g e n t i c _ A I _ W o r k s h o p  
- 
